@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function affichage(s) {
+            console.log(s);
+        }
+        //function affichage(s1) {
+        //    document.write(s1);
+        //}
+        function calcul(num1, num2, myCallback) {
+            let somme = num1 + num2;
+            myCallback(somme);
+        }
+        calcul(5, 6, affichage);
+
+    </script>
+</body>
+
+</html>
